@@ -1,0 +1,545 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <title>Bookr - Share, Rate & Review</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">Bookr</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#books">Books</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#loginModal"
+            style="color: white;"><span class="fas fa-sign-in-alt" style="color: white;"></span> Login Now</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images\bookr.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images\lambda-school.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg" alt="Third slide">
+        </div>
+      </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+
+    <div class="row header">
+      <div class="col-lg-4">
+        <img class="header-img img-responsive" src="images\logo_transparent.png" />
+
+      </div>
+      <div class="col-lg-8 header-side my-auto">
+        <span class="header-text">Bookr is dedicated to bringing book lovers a place where they can share, rate and review their favorite books with fellow books lovers. Please take a look at our featured book list to check out some of our editors and users favorite books. Keep an eye out for new releases happening all the time and stay up to date on your favorite book series! <br /> <button type="button" class="btn btn-link" data-toggle="modal"
+            data-target="#loginModal"> Login Now</button>
+
+        </span>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+
+      <div class="col-sm-12">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Featured Titles</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-4" id="books">
+
+
+      <div class="col-sm-3">
+        <div class="card">
+
+          <figure class="tint mx-auto">
+            <a href="#" data-toggle="modal" data-target="#myModal"> <img class="card-img-top"
+                src="http://www.iberianbookservices.com/wp-content/uploads/2018/10/9781787080102-300x300.jpg"
+                alt="Quantum Physics" data-toggle="modal" data-target="#myModal""> </a>
+          </figure>
+
+          <div class=" card-body">
+              <h5 class="card-title">Quantum Physics</h5>
+              <h4 class="card-title">Eduard Altarriba</h4>
+
+              <p class="card-text">Everything around us – trees, buildings, food, light, water, air and even ourselves –
+                is composed of minute particles, smaller<button type="button" class="btn" style="border-radius: 50px;"
+                  data-toggle="modal" data-target="#oneModal">...</button></p>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <figure class="tint mx-auto">
+          <img class="card-img-top"
+            src="https://johnevollmer.com/wp-content/uploads/2016/09/Ruling-from-the-Dragon-Throne-book-cover-2-1-300x300.jpg"
+            alt="Dragon Throne">
+        </figure>
+        <div class="card-body">
+          <h5 class="card-title">Dragon Throne</h5>
+          <h4 class="card-title">John E. Vollmer</h4>
+          <p class="card-text">Toward the end of nearly 2,000 years of imperial rule in China, the last dynasty,
+            designated Qing, was led by the ethnically <button type="button" class="btn" style="border-radius: 50px;"
+              data-toggle="modal" data-target="#twoModal">...</button></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <figure class="tint mx-auto">
+          <img class="card-img-top"
+            src="https://i2.wp.com/www.carissaandrews.com/wp-content/uploads/2018/07/Pendomus-Audio-Cover.jpg?resize=300%2C300&ssl=1"
+            alt="Pendomus">
+        </figure>
+        <div class="card-body">
+          <h5 class="card-title">Pendomus</h5>
+          <h4 class="card-title">Carissa Andrews</h4>
+          <p class="card-text">
+            There are a lot of things I wish I’d known earlier—but three top my “wow, she was naïve” list.
+            First—there are others on Pendomus.<button type="button" class="btn" style="border-radius: 50px;"
+              data-toggle="modal" data-target="#threeModal">...</button> </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <figure class="tint mx-auto">
+          <img class="card-img-top"
+            src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493684470l/35048585.jpg"
+            alt="Beneath a Scarlet Sky">
+        </figure>
+        <div class="card-body">
+          <h5 class="card-title">Beneath a Scarlet Sky</h5>
+          <h4 class="card-title">Mark T. Sullivan</h4>
+          <p class="card-text">Based on the true story of a forgotten hero, the USA Today and #1 Amazon Charts
+            bestseller. Beneath a Scarlet Sky is <button type="button" class="btn" style="border-radius: 50px;"
+              data-toggle="modal" data-target="#fourModal">...</button></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECOND ROW -->
+  <div class="row mt-4">
+    <div class="col-sm-3">
+      <div class="card">
+        <figure class="tint t2 mx-auto">
+          <img class="card-img-top"
+            src="https://dev.advisenltd.com/wp-content/uploads/2019/05/Cyber-Guide-2019-new-cover-300x300.jpg"
+            alt="Cyber Guide">
+        </figure><br />
+        <div class="card-body">
+          <h5 class="card-title">Cyber Guide</h5>
+          <h4 class="card-title">Advisen</h4>
+          <p class="card-text">Advisen’s Cyber Guide: The Ultimate Guide to Cyber Service Providers has been downloaded
+            by thousands since its first release <button type="button" class="btn" style="border-radius: 50px;"
+              data-toggle="modal" data-target="#fiveModal">...</button></p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <figure class="tint t2 mx-auto">
+          <img class="card-img-top" src="https://leiastone.com/wp-content/uploads/2018/12/AUDIOBOOK-2.jpg"
+            alt="Skyborn: Dragons & Druids Series">
+        </figure>
+        <div class="card-body">
+          <h5 class="card-title">Skyborn: Dragons & Druids Series</h5>
+          <h4 class="card-title">Lela Stone</h4>
+          <p class="card-text">Sloane Murphy thought hiking the Grand Canyon alone after graduation would be an awesome
+            adventure. Until she <button type="button" class="btn" style="border-radius: 50px;" data-toggle="modal"
+              data-target="#sixModal">...</button></p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3">
+      <div class="card">
+        <figure class="tint t2 mx-auto">
+          <img class="card-img-top"
+            src="https://www.goodreadswithronna.com/wp-content/uploads/2019/07/I-Am-Neil-Armstrong-book-cover-300x300.jpg"
+            alt="I am Neil Armstrong">
+        </figure><br />
+        <div class="card-body">
+          <h5 class="card-title">I am Neil Armstrong</h5>
+          <h4 class="card-title">Brad Meltzer</h4>
+          <p class="card-text">This friendly, fun biography series focuses on the traits that made our heroes great--the
+            traits that kids can aspire to in order to <button type="button" class="btn" style="border-radius: 50px;"
+              data-toggle="modal" data-target="#sevenModal">...</button></p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <figure class="tint t2 mx-auto">
+          <img class="card-img-top" src="https://cdn.pastemagazine.com/www/articles/hobbit300.jpg" alt="The Hobbit">
+        </figure><br />
+        <div class="card-body">
+          <h5 class="card-title">The Hobbit</h5>
+          <h4 class="card-title">J.R.R Tolkien</h4>
+          <p class="card-text">Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling
+            any farther than his pantry or cellar. But his <button type="button" class="btn"
+              style="border-radius: 50px;" data-toggle="modal" data-target="#eightModal">...</button></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Bookr Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Go to your login page now to start sharing and reviews books!
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="https://awesome-hamilton-51b322.netlify.com/" class="btn btn-info" role="button">Login</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="oneModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">My First Book on Quantum Physics</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> Everything around us – trees, buildings, food, light, water, air and even ourselves – is composed of
+            minute particles, smaller than a nanometer (a billionth of a meter). Quantum physics is the science of these
+            particles and without it none of our electronic devices, from smartphones to computers and microwave ovens,
+            would exist. </p>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="twoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Ruling From the Dragon Throne</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> Toward the end of nearly 2,000 years of imperial rule in China, the last dynasty, designated Qing, was led
+            by the ethnically and culturally distinct Manchu people. The Manchu established a political organization
+            using clothing fashioned after their nomadic roots to signify status and identity. Author John E. Vollmer
+            details the characteristics of Manchu dynasty costume and its political, social, and cultural significance
+            and influence in Chinese history. Included are descriptions of the various designs and symbology on the
+            cloth, as well as diagrams illustrating garment-making technology and construction features, comprehensive
+            notes, a bibliography, map, and chronology. </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="threeModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Pendomus: A Dystopian Science Fiction/Fantasy Action & Adventure Series </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> There are a lot of things I wish I’d known earlier—but three top my “wow, she was naïve” list.
+
+            First—there are others on Pendomus.
+
+            Second—a prophecy is in motion & I hold the key to the survival of literally everything.
+
+            Third—I'm being hunted by a madman who is desperately trying to wipe me from existence.
+
+            So yeah, no pressure. </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="fourModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Beneath a Scarlet Sky</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> Based on the true story of a forgotten hero, the USA Today and #1 Amazon Charts bestseller Beneath a
+            Scarlet Sky is the triumphant, epic tale of one young man's incredible courage and resilience during one of
+            history's darkest hours. Pino Lella wants nothing to do with the war or the Nazis. He's a normal Italian
+            teenager - obsessed with music, food, and girls - but his days of innocence are numbered. When his family
+            home in Milan is destroyed by Allied bombs, Pino joins an underground railroad helping Jews escape over the
+            Alps, and falls for Anna, a beautiful widow six years his senior. </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="fiveModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Advisen Cyber Guide</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> “As one of the original cyber solution providers servicing clients for 10 years as a preferred provider,
+            the Advisen Cyber Guide has been a great resource for me to keep in touch with contacts who have moved
+            companies and to connect with new insurers and law firms that have entered the market. It is helpful to
+            understand expanding capabilities and to be able to more effectively make referrals to our clients.” – Darin
+            Bielby, Ankura Consulting Group </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sixModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Skyborn (Dragons and Druids Book 1)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> Sloane Murphy thought hiking the Grand Canyon alone after graduation would be an awesome adventure. Until
+            she slips and starts to plummet to her death. Then the unthinkable happens.
+
+            She transforms into… a dragon.
+
+            After flying to safety and trying to convince herself she isn’t having a mental breakdown, the hunters come
+            for her. She runs, somehow managing to stay one step ahead of them. Until her luck runs out. Now the hunters
+            have her and they intend to kill, not capture.
+
+            That’s when he comes for her.
+
+            Logan Sharp is the last dragon shifter alive. Or so he thinks, until he gets word that the druids are
+            hunting a red headed female. His team takes her in, sheltering her because there is a truth she must learn:
+            if the skyborn die out, then so does humanity. </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sevenModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">I am Neil Armstrong (Ordinary People Change the World)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> This friendly, fun biography series focuses on the traits that made our heroes great--the traits that kids
+            can aspire to in order to live heroically themselves. Each book tells the story of one of America's icons in
+            a lively, conversational way that works well for the youngest nonfiction readers and that always includes
+            the hero's childhood influences. At the back are an excellent timeline and photos. This volume tells the
+            story of Neil Armstrong, the first person to walk on the moon. </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="eightModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than
+            his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves
+            arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the
+            treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins
+            their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a
+            frightening creature known as Gollum. </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container-fluid footer">
+
+  </div> -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
